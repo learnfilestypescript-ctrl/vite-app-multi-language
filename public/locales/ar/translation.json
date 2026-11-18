@@ -10,11 +10,11 @@
     "welcome": "Welcome, {{name}}!",
     "title": "Learn Web Development",
     "description": "Learn {{technology}} and improve your programming skills.",
-    "button": "Explore Articles"
+    "button": "استكشاف المقالات"
   },
   "articles": {
-    "title": "Latest Articles",
-    "description": "Explore our latest programming tutorials.",
+    "title": "أحدث مقالات",
+    "description": "استكشف آخر دروس البرمجة لدينا.",
     "react": {
       "title": "بدء مع React",
       "description": "Learn React fundamentals and build modern applications."
@@ -35,8 +35,8 @@
     "count": "You have {{count}} new messages."
   },
   "footer": {
-    "description": "A simple blog for developers.",
-    "copyright": "All rights reserved.",
+    "description": "مدونة بسيطة للمطورين.",
+    "copyright": "كافة الحقوق محفوظة.",
     "username": "test"
   }
 }
