@@ -1,0 +1,42 @@
+{
+  "nav": {
+    "home": "Home",
+    "articles": "Articles",
+    "about": "About",
+    "username": "hello user",
+    "sadegh": "test"
+  },
+  "hero": {
+    "welcome": "Welcome, {{name}}!",
+    "title": "Learn Web Development",
+    "description": "Learn {{technology}} and improve your programming skills.",
+    "button": "Explore Articles"
+  },
+  "articles": {
+    "title": "Latest Articles",
+    "description": "Explore our latest programming tutorials.",
+    "react": {
+      "title": "Getting Started with React",
+      "description": "Learn React fundamentals and build modern applications."
+    },
+    "javascript": {
+      "title": "Modern JavaScript",
+      "description": "Discover modern JavaScript features and techniques."
+    },
+    "typescript": {
+      "title": "TypeScript Basics",
+      "description": "Learn types, interfaces and type safety."
+    }
+  },
+  "interpolation": {
+    "title": "Interpolation Examples",
+    "name": "Hello, {{name}}!",
+    "technology": "You are learning {{technology}}.",
+    "count": "You have {{count}} new messages."
+  },
+  "footer": {
+    "description": "A simple blog for developers.",
+    "copyright": "All rights reserved.",
+    "username": "test"
+  }
+}
