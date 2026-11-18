@@ -3,11 +3,9 @@ name: Crowdin Translation Sync
 
 # Run only when a new PR is opened against main
 on:
-  pull_request:
+  push:
     branches:
       - main
-    types:
-      - opened
 
 # GitHub permissions
 permissions:
