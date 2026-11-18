@@ -1,0 +1,45 @@
+
+name: Crowdin Translation Sync
+
+# Run only when a new PR is opened against main
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+
+# GitHub permissions
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  crowdin:
+    name: Sync translations
+    runs-on: ubuntu-latest
+
+    steps:
+      # Get repository source code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Upload source files and download translations
+      - name: Sync with Crowdin
+        uses: crowdin/github-action@v3
+        with:
+          upload_sources: true
+          upload_translations: false
+          download_translations: true
+
+          localization_branch_name: l10n_crowdin_translations
+
+          create_pull_request: true
+          pull_request_title: "Update Crowdin translations"
+          pull_request_body: "Latest translations downloaded from Crowdin."
+          pull_request_base_branch_name: main
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }}
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
