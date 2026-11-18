@@ -326,8 +326,8 @@ button {
 
 .footer-content p,
 .footer-content small {
-  color: #64748b;
   font-size: 12px;
+  color: #64748b;
 }
 
 /* Responsive */
